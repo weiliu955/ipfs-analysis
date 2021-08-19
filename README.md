@@ -17,15 +17,20 @@ $ node --version
 v12.13.1
 
 $ npm install -g truffle
-mkdir filecoin & cd filecoin
-truffle unbox filecoin
-npx ganache filecoin
+$ mkdir filecoin & cd filecoin
+$ truffle unbox filecoin
 
+[run.filecoin.rpc]
+filecoin $ npx ganache filecoin
+
+[run.filecoin.browser]
 $ git clone https://github.com/trufflesuite/filecoin-network-inspector
-$ npm install
-$ git checkout ganache-changes
-$ npm run start
-npx ganache ethereum
+filecoin-network-inspector$ git checkout ganache-changes
+filecoin-network-inspector$ npm install
+filecoin-network-inspector$ npm run start
+
+[run.ethereum.rpc]
+filecoin $ npx ganache ethereum
 
 [test]
 curl -X POST \
