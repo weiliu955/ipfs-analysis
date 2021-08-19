@@ -9,3 +9,26 @@ ipfs, filecoin, ...
 ```
 ```
 #### [lotus + ipfs +ethereum](https://github.com/truffle-box/filecoin-box)
+```
+node --version
+>>>
+v16.5.0
+
+npm install -g truffle
+mkdir filecoin & cd filecoin
+truffle unbox filecoin
+npx ganache filecoin
+
+$ git clone https://github.com/trufflesuite/filecoin-network-inspector
+$ npm install
+$ git checkout ganache-changes
+$ npm run start
+npx ganache ethereum
+
+[test]
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"jsonrpc":"2.0","id":0,"method":"Filecoin.ClientStartDeal","params":[{"Data":{"TransferType":"graphsync","Root":{"/":"QmZTR5bcpQD7cFgTorqxZDYaew1Wqgfbd2ud9QqGPAkK2V"},"PieceCid":null,"PieceSize":0},"Wallet":"t3s3la37547tijmoeiep7ktogws3tep2eqrralh7rhi2mpe46q574gceyy467356onblzvwf7ejlelo2rdsg4q","Miner":"t01000","EpochPrice":"2500","MinBlocksDuration":300}]}' \
+     http://localhost:7777/rpc/v0
+
+```
