@@ -9,10 +9,11 @@ ipfs, filecoin, ...
 ```
 ```
 #### [lotus + ipfs +ethereum](https://github.com/truffle-box/filecoin-box)
+*ganche works with node.js 12.13.1. It doesn't go well with 16.x.x*
 ```
 node --version
 >>>
-v16.5.0
+v12.13.1
 
 npm install -g truffle
 mkdir filecoin & cd filecoin
