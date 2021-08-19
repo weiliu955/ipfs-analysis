@@ -17,6 +17,8 @@ $ node --version
 v12.13.1
 
 $ npm install -g truffle
+$ npm i truffle-plugin-debugger
+
 $ mkdir filecoin & cd filecoin
 $ truffle unbox filecoin
 
